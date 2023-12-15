@@ -34,7 +34,7 @@ Feature: Greencarthomepage
     
     Examples:
     |vegetables |  quantity |
-  #  | "potato"       |   4       |
+    | "potato"       |   4       |
     | "onion"       |   2      |
   
    @invalid

@@ -58,10 +58,11 @@ public class GreencartHome extends Abstractuses{
 	public void oneproduct(String Name,int Quantity) throws InterruptedException {
 		searchinhome(Name);
 		Thread.sleep(1000);
+         waittoallelement(products);
 		//List<WebElement> foundElement = driver.findElements(By.xpath("//*[@class=\"products\"]  //*[@class=\"product\"]"));
 		for( WebElement eachproduct:products) {
 			String productname = eachproduct.findElement(By.xpath(".//h4")).getText().split(" ")[0];
-			Thread.sleep(2000);
+			//Thread.sleep(2000);
 			if(productname.equalsIgnoreCase(Name)) {
 				Thread.sleep(1000);
 				for(int i=0;i<Quantity;i++) {
