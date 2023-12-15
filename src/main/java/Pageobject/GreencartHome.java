@@ -86,7 +86,7 @@ public class GreencartHome extends Abstractuses{
 	
 	
 	public void searchinhome(String values) {
-		System.out.println("insideseach");
+		System.out.println(values);
 		actions.moveToElement(searchbox).click().sendKeys(values).build().perform();
 		//wait.until(ExpectedConditions.visibilityOfAllElements(products));
          

@@ -75,6 +75,7 @@ public class GreencartHomePage {
 	public void user_typing_invalid_vegatables(String invalidproducts) {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new io.cucumber.java.PendingException();
+		System.out.println(invalidproducts);
 		homepage.searchinhome(invalidproducts);
 	}
 

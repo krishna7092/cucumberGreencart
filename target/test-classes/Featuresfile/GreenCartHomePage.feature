@@ -41,12 +41,12 @@ Feature: Greencarthomepage
   Scenario: invalid search
     When user is on home page
     Then able to see lot of veggies and fruits
-    When user typing invalid <vegatables> 
+    When user typing invalid <vegetables> 
     Then user able to see "Sorry, no products matched your search!"
    
     
     Examples:
     |vegetables          |  
-    | "shredf1234"       |
-   # | 12243243           |
+    | shredf1234       |
+    | Potato     |
   
