@@ -37,7 +37,7 @@ Feature: Greencarthomepage
     | "potato"       |   4       |
     | "onion"       |   2      |
   
-   @invalid
+   @greencart
   Scenario: invalid search
     When user is on home page
     Then able to see lot of veggies and fruits
