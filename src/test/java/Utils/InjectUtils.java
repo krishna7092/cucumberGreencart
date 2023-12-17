@@ -11,11 +11,12 @@ public class InjectUtils {
 
 	public WebDriver driver;
 	public objectfactory factory;
+	public Genericutils generic;
 	
 	public InjectUtils() throws FileNotFoundException, IOException {
 		driver=new BaseDriver().driver();
 		factory=new objectfactory(driver);
-		
+		generic =new Genericutils(driver);		
 	}
 	
 

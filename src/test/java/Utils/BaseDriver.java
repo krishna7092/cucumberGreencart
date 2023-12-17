@@ -15,7 +15,9 @@ public class BaseDriver {
 			WebDriver driver;
 			Properties pr=new Properties();
 			pr.load(new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\global.properties"));
-					String property = pr.getProperty("Browser");
+					//String property = pr.getProperty("Browser");
+					String property = System.getProperty("browseroptions")==null?pr.getProperty("Browser"):System.getProperty("browseroptions");
+					System.out.println(System.getProperty("browseroptions"));
 					if(property.equalsIgnoreCase("chrome"))
 					{
 						driver =new ChromeDriver(); 
