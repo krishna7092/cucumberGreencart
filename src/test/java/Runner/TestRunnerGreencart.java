@@ -1,5 +1,7 @@
 package Runner;
 
+import org.testng.annotations.DataProvider;
+
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
@@ -11,5 +13,12 @@ plugin = { "rerun:target\\failed scenario.txt" ,"pretty", "html:\\Reports\\resul
 tags="@greencart")
 
 public class TestRunnerGreencart extends AbstractTestNGCucumberTests{
+	
+	@Override
+	  @DataProvider(parallel = true)
+	  public Object[][] scenarios() {
+		// TODO Auto-generated method stub
+		return super.scenarios();
+	}
 	
 }
